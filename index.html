@@ -6,122 +6,24 @@
     <title>Manzanas Enchiladas | Pedidos</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            background: #fff8f5;
-            color: #1a1a1a;
-            line-height: 1.5;
-        }
-        header {
-            background: linear-gradient(135deg, #c41e3a, #8b0000);
-            color: white;
-            text-align: center;
-            padding: 2.5rem 1rem;
-        }
-        header h1 {
-            font-size: 2.8rem;
-            font-weight: 800;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-        header p {
-            font-size: 1.3rem;
-            margin-top: 0.5rem;
-            opacity: 0.95;
-        }
-        .hero {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            padding: 3rem 1.5rem;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-        .hero-img {
-            flex: 1 1 320px;
-            max-width: 420px;
-            background: #fff;
-            border-radius: 16px;
-            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
-            padding: 1rem;
-            text-align: center;
-        }
-        .hero-img img {
-            width: 100%;
-            border-radius: 12px;
-        }
-        .hero-info {
-            flex: 1 1 300px;
-            text-align: center;
-        }
-        .price {
-            font-size: 3.5rem;
-            font-weight: 800;
-            color: #c41e3a;
-            margin: 1rem 0;
-        }
-        .price span {
-            font-size: 1.4rem;
-            font-weight: 500;
-            color: #555;
-        }
-        .cta {
-            display: inline-block;
-            background: #c41e3a;
-            color: white;
-            text-decoration: none;
-            padding: 1rem 2.2rem;
-            border-radius: 50px;
-            font-size: 1.25rem;
-            font-weight: 700;
-            margin-top: 1rem;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .cta:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(196,30,58,0.4);
-        }
-        .features {
-            background: white;
-            padding: 3rem 1.5rem;
-            text-align: center;
-        }
-        .features h2 {
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-            color: #8b0000;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1.5rem;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .card {
-            background: #fff8f5;
-            padding: 1.5rem;
-            border-radius: 12px;
-            border: 1px solid #f0d0d0;
-        }
-        .card h3 {
-            color: #c41e3a;
-            margin-bottom: 0.5rem;
-        }
-        footer {
-            background: #1a1a1a;
-            color: #ccc;
-            text-align: center;
-            padding: 2rem 1rem;
-            font-size: 0.95rem;
-        }
-        footer a {
-            color: #ff6b6b;
-            text-decoration: none;
-            font-weight: 600;
-        }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: #fff8f5; color: #1a1a1a; line-height: 1.5; }
+        header { background: linear-gradient(135deg, #c41e3a, #8b0000); color: white; text-align: center; padding: 2.5rem 1rem; }
+        header h1 { font-size: 2.8rem; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; }
+        header p { font-size: 1.3rem; margin-top: 0.5rem; opacity: 0.95; }
+        .hero { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 2rem; padding: 3rem 1.5rem; max-width: 1100px; margin: 0 auto; }
+        .hero-img { flex: 1 1 320px; max-width: 420px; }
+        .hero-img img { width: 100%; border-radius: 16px; box-shadow: 0 12px 40px rgba(0,0,0,0.15); }
+        .hero-info { flex: 1 1 300px; text-align: center; }
+        .price { font-size: 3.5rem; font-weight: 800; color: #c41e3a; margin: 1rem 0; }
+        .price span { font-size: 1.4rem; font-weight: 500; color: #555; }
+        .cta { display: inline-block; background: #c41e3a; color: white; text-decoration: none; padding: 1rem 2.2rem; border-radius: 50px; font-size: 1.25rem; font-weight: 700; margin-top: 1rem; }
+        .features { background: white; padding: 3rem 1.5rem; text-align: center; }
+        .features h2 { font-size: 1.8rem; margin-bottom: 2rem; color: #8b0000; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 0 auto; }
+        .card { background: #fff8f5; padding: 1.5rem; border-radius: 12px; border: 1px solid #f0d0d0; }
+        .card h3 { color: #c41e3a; margin-bottom: 0.5rem; }
+        footer { background: #1a1a1a; color: #ccc; text-align: center; padding: 2rem 1rem; font-size: 0.95rem; }
+        footer a { color: #ff6b6b; text-decoration: none; font-weight: 600; }
     </style>
 </head>
 <body>
@@ -129,39 +31,24 @@
         <h1>Manzanas Enchiladas</h1>
         <p>Manzana bañada de chamoy</p>
     </header>
-
     <section class="hero">
         <div class="hero-img">
-            <img src="https://raw.githubusercontent.com/d2zkwwkgnv-cell/manzanas-web/main/manzanas.png" alt="Manzanas enchiladas" onerror="this.style.display='none'">
-            <p style="margin-top:1rem;color:#888;font-size:0.9rem;">Manzanas Enchiladas</p>
+            <img src="manzana.jpg" alt="Manzana enchilada">
         </div>
         <div class="hero-info">
             <div class="price">$25 <span>c/u</span></div>
-            <p style="font-size:1.15rem; color:#444; margin-bottom:1rem;">
-                Deliciosas manzanas cubiertas de chamoy, perfectas para cualquier antojo.
-            </p>
+            <p style="font-size:1.15rem; color:#444; margin-bottom:1rem;">Deliciosas manzanas cubiertas de chamoy, perfectas para cualquier antojo.</p>
             <a href="tel:7442743450" class="cta">📞 Pedidos: 744 274 3450</a>
         </div>
     </section>
-
     <section class="features">
         <h2>¿Por qué elegirnos?</h2>
         <div class="grid">
-            <div class="card">
-                <h3>Sabor intenso</h3>
-                <p>Chamoy de calidad que realza el dulzor natural de la manzana.</p>
-            </div>
-            <div class="card">
-                <h3>Fresco diario</h3>
-                <p>Preparadas al momento para máxima frescura y textura.</p>
-            </div>
-            <div class="card">
-                <h3>Listas para disfrutar</h3>
-                <p>Con palito incluido, ideales para llevar o regalar.</p>
-            </div>
+            <div class="card"><h3>Sabor intenso</h3><p>Chamoy de calidad que realza el dulzor natural de la manzana.</p></div>
+            <div class="card"><h3>Fresco diario</h3><p>Preparadas al momento para máxima frescura y textura.</p></div>
+            <div class="card"><h3>Listas para disfrutar</h3><p>Con palito incluido, ideales para llevar o regalar.</p></div>
         </div>
     </section>
-
     <footer>
         <p>Manzanas Enchiladas · Acapulco</p>
         <p style="margin-top:0.5rem;">Pedidos al <a href="tel:7442743450">744 274 3450</a></p>
